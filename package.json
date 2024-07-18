@@ -1,0 +1,24 @@
+{
+  "name": "es-node",
+  "version": "0.0.1",
+  "description": "test",
+  "typings": "types/typings.json",
+  "scripts": {
+    "dev": "jasmine ./test/index.js",
+    "run": "jasmine ./test/build/Test.js",
+    "test": "npm run dev & npm run run",
+    "manifest": "esc -o types -f types/index.d.es --manifest --scope es-node"
+  },
+  "dependencies": {
+    "es-javascript": "latest"
+  },
+  "devDependencies": {
+    "easescript": "latest",
+    "easescript-cli": "latest",
+    "jasmine": "^3.10.0"
+  },
+  "esconfig": {
+    "scope": "es-node",
+    "inherits": []
+  }
+}
